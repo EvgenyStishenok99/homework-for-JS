@@ -6,4 +6,10 @@
 */
 
 // your code
-let factorial
+let factorial = 1 ;
+let firstNumber = 1;
+while (firstNumber <= 10) {
+  factorial = factorial++ * firstNumber;
+  firstNumber++;
+}
+console.log(factorial);
