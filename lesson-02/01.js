@@ -15,14 +15,16 @@ let isVerifiedUser = false    ;
 let hasSpecialPermission = false  ;
 let hasTemporaryPass = false  ;
 
-let isAccess;
+let isAccess = false;
 
-while (((isAdmin = false) || (isVerifiedUser = false)) &&((hasSpecialPermission = false)||(hasTemporaryPass = false))) {
-  ifisAdmin = (((isAdmin = false) || (isVerifiedUser = false)) &&((hasSpecialPermission = false)||(hasTemporaryPass = false))) {
+while (!isAccess) {
+  if  (((isAdmin = true) || (isVerifiedUser = true)) &&((hasSpecialPermission = true)||(hasTemporaryPass = true))) {
     let inAccess = true
 
 
   }  else {
-    let inAccess = false;
+
   }
 }
+
+
