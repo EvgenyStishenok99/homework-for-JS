@@ -4,6 +4,32 @@
  * Результат сохраните в переменной grade.
  */
 
-const score = 70 // тестовое значение, можно изменять
+const score = 70// тестовое значение, можно изменять
 let grade
 // your code
+let endPlay = false;
+
+
+while (!endPlay) {
+  if(score >= 0 && score <= 49){
+    grade = "F"
+    endPlay = true;
+  }
+  else if(score >= 50 && score <= 69){
+    grade = "D"
+    endPlay = true;
+  }
+  else if(score >= 70 && score <= 79){
+    grade = "C"
+    endPlay = true;
+  }
+  else if(score >= 80 && score <= 89){
+    grade = "B"
+    endPlay = true;
+  }
+  else if(score >= 90 && score <= 100){
+    grade = "A"
+    endPlay = true;
+  }
+}
+console.log(grade);
