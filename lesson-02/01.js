@@ -17,15 +17,19 @@ const hasSpecialPermission = false ;
 const hasTemporaryPass = true ;
 
 let isAccess = false;
+let endPlay = false;
 
-while (!isAccess) {
+while (!endPlay) {
   if  (((isAdmin === true) || (isVerifiedUser === true)) &&((hasSpecialPermission === true)||(hasTemporaryPass === true))) {
 
     console.log("Доступ разрешён")
+    endPlay = true;
     isAccess = true;
 
   }  else {
-    isAccess = true;
+    endPlay = true;
+
+    isAccess = false;
 
 
     console.log("Доступ запрещен");
