@@ -10,19 +10,25 @@
 */
 
 // тестовые данные (значения можно менять)
-let isAdmin = false   ;
-let isVerifiedUser = false    ;
-let hasSpecialPermission = false  ;
-let hasTemporaryPass = false  ;
+    const isAdmin = Math.random() ;
+
+const isVerifiedUser = Math.random()   ;
+const hasSpecialPermission = Math.random() ;
+const hasTemporaryPass = Math.random() ;
 
 let isAccess = false;
 
 while (!isAccess) {
-  if  (((isAdmin = true) || (isVerifiedUser = true)) &&((hasSpecialPermission = true)||(hasTemporaryPass = true))) {
-    let inAccess = true
+  if  (((isAdmin <0.5) || (isVerifiedUser <0.5)) &&((hasSpecialPermission <0.5)||(hasTemporaryPass <0.5))) {
 
+    console.log("Проход разрешён")
+    isAccess = true;
 
   }  else {
+    isAccess = true;
+
+
+    console.log("Проход запрещен");
 
   }
 }
