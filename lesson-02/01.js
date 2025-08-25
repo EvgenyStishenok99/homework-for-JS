@@ -10,16 +10,16 @@
 */
 
 // тестовые данные (значения можно менять)
-    const isAdmin = Math.random() ;
+    const isAdmin = true ;
 
-const isVerifiedUser = Math.random()   ;
-const hasSpecialPermission = Math.random() ;
-const hasTemporaryPass = Math.random() ;
+const isVerifiedUser = true   ;
+const hasSpecialPermission = false ;
+const hasTemporaryPass = true ;
 
 let isAccess = false;
 
 while (!isAccess) {
-  if  (((isAdmin <0.5) || (isVerifiedUser <0.5)) &&((hasSpecialPermission <0.5)||(hasTemporaryPass <0.5))) {
+  if  (((isAdmin === true) || (isVerifiedUser === true)) &&((hasSpecialPermission === true)||(hasTemporaryPass === true))) {
 
     console.log("Доступ разрешён")
     isAccess = true;
