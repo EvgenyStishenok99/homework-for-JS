@@ -21,14 +21,14 @@ let isAccess = false;
 while (!isAccess) {
   if  (((isAdmin <0.5) || (isVerifiedUser <0.5)) &&((hasSpecialPermission <0.5)||(hasTemporaryPass <0.5))) {
 
-    console.log("Проход разрешён")
+    console.log("Доступ разрешён")
     isAccess = true;
 
   }  else {
     isAccess = true;
 
 
-    console.log("Проход запрещен");
+    console.log("Доступ запрещен");
 
   }
 }
