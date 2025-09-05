@@ -40,5 +40,5 @@ function findUniqueElements(arr) {
 
   return result;
 }
-
-console.log(findUniqueElements([true, false, true, false]));
+const endResult = findUniqueElements([true, true,true,true,true,false, true, false]);
+console.log(endResult);
