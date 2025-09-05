@@ -12,23 +12,20 @@
 Пример использования:
 includesElement([1, 2, 3], 2)  // должен вернуть `true`.
 */
-const array = [1,2,3,4,5]
+const arr = [1,2,3,4,5]
 const elements = 1
 
 
 
-function includesElement(myArray, myElement) {
+export function includesElement(myArray, myElement) {
   for (let i = 0; i < myArray.length; i++) {
     if (myArray[i] === myElement) {
       return true
 
     }
-
-
-
   }
  return false
 }
 
- const full=includesElement(array, elements)
-console.log(full)
+ // const full=includesElement(array, elements)
+console.log(includesElement(arr, elements))
