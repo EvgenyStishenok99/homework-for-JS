@@ -41,4 +41,4 @@ function findUniqueElements(arr) {
   return result;
 }
 
-console.log(findUniqueElements([1,4,5,6,7,7,3,3,3,]));
+console.log(findUniqueElements([true, false, true, false]));

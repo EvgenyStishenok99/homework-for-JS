@@ -28,4 +28,4 @@ export function includesElement(myArray, myElement) {
 }
 
  // const full=includesElement(array, elements)
-console.log(includesElement(arr, elements))
+//console.log(includesElement(arr, elements))
