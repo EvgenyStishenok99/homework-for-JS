@@ -17,7 +17,7 @@ const elements = 1
 
 
 
-export function includesElement(myArray, myElement) {
+ function includesElement(myArray, myElement) {
   for (let i = 0; i < myArray.length; i++) {
     if (myArray[i] === myElement) {
       return true

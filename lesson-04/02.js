@@ -14,18 +14,21 @@
 
 Подсказка: можно использовать функцию `includesElement`, которую мы написали ранее. Переписывать её не нужно, она доступна по всему проекту за счёт hoisting.
 */
-import {includesElement} from './01.js'
+
 
 
 //findUniqueElements будет использовать глобальную includesElement
-// function includesElement(myArray, myElement) {
-//   for (let i = 0; i < myArray.length; i++) {
-//     if (myArray[i] === myElement) {
-//       return true;
-//     }
-//   }
-//   return false;
-// }
+function includesElement(myArray, myElement) {
+  for (let i = 0; i < myArray.length; i++) {
+    if (myArray[i] === myElement) {
+      return true;
+    }
+  }
+  return false;
+}
+
+
+
 
 function findUniqueElements(arr) {
   const result = [];
@@ -40,5 +43,5 @@ function findUniqueElements(arr) {
 
   return result;
 }
-const endResult = findUniqueElements([true, true,true,true,true,false, true, false]);
+const endResult = findUniqueElements([1,4,4,4,5,5,6,7]);
 console.log(endResult);
