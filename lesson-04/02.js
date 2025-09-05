@@ -14,5 +14,31 @@
 
 Подсказка: можно использовать функцию `includesElement`, которую мы написали ранее. Переписывать её не нужно, она доступна по всему проекту за счёт hoisting.
 */
+import {includesElement} from './01.js'
 
-function findUniqueElements() {}
+
+//findUniqueElements будет использовать глобальную includesElement
+// function includesElement(myArray, myElement) {
+//   for (let i = 0; i < myArray.length; i++) {
+//     if (myArray[i] === myElement) {
+//       return true;
+//     }
+//   }
+//   return false;
+// }
+
+function findUniqueElements(arr) {
+  const result = [];
+
+  for (let i = 0; i < arr.length; i++) {
+    const currentElement = arr[i];
+
+    if (!includesElement(result, currentElement)) {
+      result.push(currentElement);
+    }
+  }
+
+  return result;
+}
+
+console.log(findUniqueElements([1,4,5,6,7,7,3,3,3,]));
