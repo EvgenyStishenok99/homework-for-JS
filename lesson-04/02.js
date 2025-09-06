@@ -18,6 +18,15 @@
 
 
 //findUniqueElements будет использовать глобальную includesElement
+function includesElement(myArray, myElement) {
+  for (let i = 0; i < myArray.length; i++) {
+    if (myArray[i] === myElement) {
+      return true;
+    }
+  }
+  return false;
+}
+
 
 
 

@@ -28,4 +28,4 @@ const elements = 1
 }
 
  // const full=includesElement(array, elements)
-//console.log(includesElement(arr, elements))
+console.log(includesElement(arr, elements))
