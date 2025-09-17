@@ -15,5 +15,15 @@ const game = {
     gold: 250,
     lumber: 100,
   },
-  addResource() {}
+   addResource: function (resource,amount) {
+    if (!(resource in this.resources)) {
+      console.log("Invalid resource");
+      return;
+    }
+    this.resources[resource] += amount;
+  }
 }
+game.addResource("oil", 45);
+game.addResource("lumber", 3000);
+game.addResource("gold", 50);
+console.log(game.resources)
